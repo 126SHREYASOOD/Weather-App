@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <img src="weather-header.jpg" alt="Weather Banner" style="width:100%; max-height: 200px; object-fit: cover;">
+    </header>
+    <div class="container">
+        <h2>Check Your City's Weather</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div class="weather-info" id="weatherInfo"></div>
+        <div class="forecast" id="forecast" style="display: flex; overflow-x: auto; gap: 10px;"></div>
+    </div>
+    <section class="about">
+        <h3>About This App</h3>
+        <p>This weather app allows you to check real-time weather updates for any city in the world. Enter your city name and get temperature, humidity, and weather conditions instantly.</p>
+        <p>Now, you can also view the weather forecast for the next 7 days.</p>
+        <img src="weather-illustration.png" alt="Weather Illustration" style="width:100%; max-width: 400px; display: block; margin: 10px auto;">
+    </section>
+    <section class="features">
+        <h3>Features</h3>
+        <ul>
+            <li>Real-time temperature, humidity, and weather conditions.</li>
+            <li>7-day weather forecast with detailed daily insights.</li>
+            <li>Interactive weather icons representing the current weather.</li>
+            <li>Supports searching for any city worldwide.</li>
+        </ul>
+    </section>
+    <section class="tips">
+        <h3>Weather Safety Tips</h3>
+        <p>Stay prepared with these weather safety tips:</p>
+        <ul>
+            <li>Check the forecast before planning outdoor activities.</li>
+            <li>Dress accordingly to the weather conditions.</li>
+            <li>Stay hydrated and protect yourself from extreme temperatures.</li>
+            <li>Keep an emergency kit ready for severe weather conditions.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Weather App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
